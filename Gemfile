@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.1"
 gem "sprockets-rails"
 
 
+  gem 'pg', '~> 1.2', '>= 1.2.3'
 
 gem "puma", "~> 5.0"
 
@@ -28,7 +29,6 @@ gem "bootsnap", require: false
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 
 group :production do
-  gem 'pg', '~> 1.2', '>= 1.2.3'
   gem 'rails_12factor', '0.0.2'
   end
 
