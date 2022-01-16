@@ -7,7 +7,7 @@ gem "rails", "~> 7.0.1"
 
 gem "sprockets-rails"
 
-gem "sqlite3", "~> 1.4"
+
 
 gem "puma", "~> 5.0"
 
@@ -27,8 +27,14 @@ gem "bootsnap", require: false
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 
+group :production do
+  gem 'pg', '~> 1.2', '>= 1.2.3'
+  #gem 'rails_12factor', '0.0.2'
+  end
+
 group :development, :test do
 gem "debug", platforms: %i[ mri mingw x64_mingw ]
+gem "sqlite3", "~> 1.4"
 end
 
 group :development do
@@ -39,4 +45,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+
 end
