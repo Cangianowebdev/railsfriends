@@ -1,0 +1,28 @@
+<% if user_signed_in? %>
+<h1 style="text-align:center;">Friends</h1>
+<div style="border:solid 1px;padding:2em 1em;margin:1em 0;border-radius:5px;">
+
+  <% @friends.each do |friend| %>
+  <div class="row">
+
+    <%= render friend %>
+   
+      <br/>
+  <br/>
+ 
+  <div class="col-1">
+   <div class="btn btn-dark">
+      <%= link_to "Show", friend %>
+    </div>
+  </div></div><br/><br/>
+  <% end %>
+
+
+</div>
+<div class="btn btn-primary" style="margin-left:1em;">
+<%= link_to "New friend", new_friend_path %>
+</div>
+<% else %>
+<h1>Hello World!</h1>
+<p>Welcome To My First Ruby App!</p>
+<% end %>

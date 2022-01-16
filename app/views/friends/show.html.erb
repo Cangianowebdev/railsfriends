@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center" style="width:100%;">
+  <div style="width:2000px;">
+<h2 style="background-color:#000;color:#fff;text-align:center;padding:5px 0;">Friend </h2>
+<div style="border:solid 1px; padding:2em 1em;">
+<div class="row d-flex justify-content-center">
+
+<%= render @friend %>
+</div>
+ <br/>
+ <hr>
+<div class="row d-flex justify-content-center">
+
+ <div class="col-2">
+ <div class="btn btn-secondary">
+  <%= link_to "Back", friends_path %>
+</div>
+</div>
+  <div class="col-2">
+ <div class="btn btn-success">
+<%= link_to "Edit", edit_friend_path(@friend) %> 
+</div>
+</div>
+ <div class="col-2">
+  <%= button_to "Delete", @friend, method: :delete, class: "btn-danger" %>
+</div>
+</div>
+</div></div></div></div>

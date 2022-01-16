@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center" style="width:100%;">
+  <div style="width:500px;padding:50px;">
+<h2 style="background-color:#000;color:#fff;text-align:center;padding:5px 0;">Forgot Password</h2>
+<div style="border:solid 1px; padding:1em;">
+<p> Enter E-mail then click Reset.</p>
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field"><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "E-mail.." %>
+  </div>
+<br/>
+  <div class="actions">
+    <%= f.submit "Reset" %>
+  </div>
+<% end %>
+<br/>
+<%= render "devise/shared/links" %>
+</div></div></div>
