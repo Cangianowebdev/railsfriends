@@ -1,3 +1,5 @@
+Demo: https://cangianorubyfriendslist.herokuapp.com/
+
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +24,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+Demo: https://cangianorubyfriendslist.herokuapp.com/
