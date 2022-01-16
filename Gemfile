@@ -29,6 +29,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 
 group :production do
   gem 'pg', '~> 1.2', '>= 1.2.3'
+  gem 'rails_12factor', '0.0.2'
   end
 
 group :development, :test do
