@@ -16,3 +16,7 @@ Required
 - Devise
 - PostgreSQL
 - An IDE
+
+
+
+Project created by - https://www.youtube.com/watch?v=fmyvWz5TUWg&t=13871s
