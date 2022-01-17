@@ -12,7 +12,7 @@ Required
 - Git
 - Ruby
 - Ruby on Rails
-- sqlite3
+- Sqlite3
 - Devise
 - PostgreSQL
 - An IDE
