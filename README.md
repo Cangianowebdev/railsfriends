@@ -24,6 +24,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-
-Demo: https://cangianorubyfriendslist.herokuapp.com/
